@@ -52,7 +52,14 @@ export default function Header() {
 
     return (
         <div className='header-option' onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-            
+            <div className='header-parent'>
+                <div className='header-hamburger' onClick={()=> setShowHeaderOptions(!showHeaderOptions)}>
+                    <FontAwesomeIcon className='header-hamburger-bars' icon={faBars} />
+                </div>
+                <div className='header-logo'>
+                    <span></span>
+                </div>
+            </div>
         </div>
     );
 };
